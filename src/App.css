@@ -50,22 +50,18 @@
   color: #888;
 }
 
-/* src/App.css */
-
 .app-layout {
   display: flex;
   height: 100vh;
 }
 
-/* Sidebar assumed class */
 .sidebar {
-  width: 250px; /* أو حسب تصميمك */
+  width: 250px; 
   background-color: ghostwhite;
   color: white;
   overflow-y: auto;
 }
 
-/* المحتوى الرئيسي مع الفوتر */
 .main-content {
   flex: 1;
   display: flex;
@@ -75,12 +71,10 @@
   overflow-y: auto;
 }
 
-/* المحتوى اللي داخل main-content (مثل Routes) ياخد أكبر مساحة */
 .main-content > div {
   flex-grow: 1;
 }
 
-/* تصميم الفوتر */
 .app-footer {
   background-color: ghostwhite;
   color: black;

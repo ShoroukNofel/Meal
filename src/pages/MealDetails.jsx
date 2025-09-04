@@ -82,13 +82,11 @@ function MealDetails() {
           </div>
         </div>
 
-        {/* العمود الثاني: التعليمات */}
         <div className="meal-instructions">
           <h2>Instructions</h2>
           <p>{meal.strInstructions}</p>
         </div>
 
-        {/* العمود الثالث: المكونات */}
         <div className="meal-ingredients">
           <h2>Ingredients</h2>
           <table>

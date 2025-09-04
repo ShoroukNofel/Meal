@@ -61,7 +61,6 @@
   -o-transform: translateX(-50%);
 }
 
-/* لفّة وحدة سريعة عند hover */
 .meal-card:hover .meal-img-wrapper {
   animation: spin-once 0.6s ease forwards;
   -webkit-animation: spin-once 0.6s ease forwards;

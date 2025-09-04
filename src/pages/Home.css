@@ -15,11 +15,12 @@
   margin-left: 10px;
   animation: leaf-wave 2s ease-in-out infinite;
   transform-origin: 50% 50%;
+  -webkit-animation: leaf-wave 2s ease-in-out infinite;
 }
 
 @keyframes leaf-wave {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(15deg); }
+  0%, 100% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+  50% { transform: rotate(15deg); -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -o-transform: rotate(15deg); }
 }
 
 .tagline {
@@ -49,6 +50,10 @@
   font-size: 14px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tab:hover {
@@ -66,8 +71,8 @@
 .meals-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 25px;   /* مسافة بين الأعمدة */
-  row-gap: 80px;      /* ✅ مسافة بين الصفوف */
+  column-gap: 25px;   
+  row-gap: 80px;      
  margin-top: 80px;
  padding-top: 50px;
 
