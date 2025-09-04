@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.meal-details {
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.meal-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.meal-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* مهم: عشان الزرارين تحت الصورة في وسط العمود */
+  gap: 15px;
+}
+
+.meal-image {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meal-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.meal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  min-width: 110px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.btn-youtube {
+  background-color: #ff0000;
+}
+
+.btn-source {
+  background-color: #28a745;
+}
+
+.meal-instructions {
+  font-size: 1rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.meal-ingredients {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.meal-ingredients h2 {
+  margin-bottom: 15px;
+}
+
+.meal-ingredients table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.meal-ingredients td {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.meal-ingredients td:first-child {
+  font-weight: 600;
+  width: 55%;
+}
+
+.loading {
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.error-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.error-container h2 {
+  color: tomato;
+  margin-bottom: 15px;
+}
+
+.error-container button {
+  padding: 10px 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error-container button:hover {
+  opacity: 0.9;
+}
