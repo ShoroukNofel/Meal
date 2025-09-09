@@ -2,8 +2,7 @@
   "name": "app2",
   "private": true,
   "version": "0.0.0",
-
-  "homepage": "https://github.com/ShoroukNofel/M",
+  "homepage": "https://github.com/ShoroukNofel/Meal",
   "type": "module",
   "scripts": {
     "dev": "vite",
